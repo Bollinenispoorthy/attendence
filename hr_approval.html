@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR Attendance Approval</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>HR Attendance Approval</h2>
+        <form action="approve_request.php" method="POST">
+            <label for="request_id">Request ID:</label>
+            <input type="text" id="request_id" name="request_id" required>
+
+            <label for="approval_status">Approval Status:</label>
+            <select id="approval_status" name="approval_status" required>
+                <option value="approved">Approved</option>
+                <option value="rejected">Rejected</option>
+            </select>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments"></textarea>
+
+            <input type="submit" value="Submit Approval">
+        </form>
+    </div>
+</body>
+</html>
